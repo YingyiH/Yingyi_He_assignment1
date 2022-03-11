@@ -59,7 +59,7 @@ a {
     border: none;
     font-size: 24px;
     color: #191724;
-    padding-left: 180px;
+    padding-left: 75%;
 }
 
 .left-slide-in-button:hover {
@@ -75,6 +75,9 @@ a {
     flex-direction: column;
 }
 
+#new-note-text {
+    margin: 0;
+}
 
 .slide-note {
     display: flex;
@@ -113,6 +116,14 @@ footer {
     width: 100%;
 }
 
+.create-note {
+    width: 50%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .create-new-note {
     width: 100%;
     padding-top: 100px;
@@ -138,10 +149,11 @@ textarea {
 
 @media screen and (max-width: 750px) {
     header {
-        width: auto;
+        position: fixed;
+        width: 100%;
         margin: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
 
     li, h1 {
@@ -149,7 +161,9 @@ textarea {
     }
 
     .left-slide-in-button {
+        border: none;
         font-size: 14px;
+        padding: 20px;
     }
 
     .create-new-note {
@@ -167,11 +181,15 @@ textarea {
         height: 200px;
     }
 
-    .left-slide-in-button {
-        padding-left: 20px;
+    .left-slide-out {
+        margin-top: 50px;
     }
 
     #save-delete {
         font-size: 12px;
+    }
+
+    .left-slide-button {
+        margin-top: 75px;
     }
 }
