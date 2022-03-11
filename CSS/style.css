@@ -1,35 +1,127 @@
 body {
-    background-color: antiquewhite;
+    background-color: #9ccfd8;
     margin: 0px;
 }
 
 header {
+    font-family: 'IBM Plex Serif', serif;
     display: flex;
     justify-content: flex-end;
-    background-color: white;
+    background-color: #31748f;
+}
+
+p {
+    font-family: 'IBM Plex Serif', serif;
+    color:#191724;
 }
 
 .navigation {
     width: 130px;
 }
 
-ul {
+ul,li {
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style: none;
+    padding: 5px;
+
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 a {
     text-decoration: none;
+    color: #e0def4;
 }
 
-.left-side-button {
+.left-slide-button {
     background-color: transparent;
     border: none;
     font-size: 24px;
+    color: #191724;
 }
 
-.left-side-button:hover {
-    color: blueviolet;
+.left-slide-button:hover {
+    color: #31748f;
+}
+
+.left-slide-in-button {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #191724;
+    padding-left: 150px;
+}
+
+.left-slide-in-button:hover {
+    color: #9ccfd8;
+}
+.left-slide-out {
+    position: fixed;
+    top: 30;
+    width: 15%;
+    height:100%;
+    background-color: #31748f;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.slide-note {
+    display: flex;
+    flex-direction: column;
+}
+
+#new-note-button {
+    display: flex;
+    align-items: flex-start;
+    background-color: transparent;
+    border: none;
+    font-size: 26px;
+    color: #191724;
+    height: 30px;
+}
+#new-note-button:hover {
+    color: #31748f;
+    background-color:white;
+}
+
+.save-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#save-delete {
+    background-color: #31748f;
+    font-size: 16px;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.create-new-note {
+    width: 200px;
+    padding-left: 250px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+textarea {
+    background-color: white;
+    border: none;
+    outline: none;
+    resize: none;
+    width: 400px;
+    height: 250px;
 }
