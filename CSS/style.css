@@ -7,7 +7,7 @@ header {
     font-family: 'IBM Plex Serif', serif;
     display: flex;
     justify-content: flex-end;
-    background-color: #31748f;
+    background-color: #fffaf3;
 }
 
 p {
@@ -34,13 +34,13 @@ a:hover {
 }
 
 h1 {
-    color: #e0def4;
+    color: #191724;
     font-size: 22px;
 }
 
 a {
     text-decoration: none;
-    color: #e0def4;
+    color: #191724;
 }
 
 .left-slide-button {
@@ -51,7 +51,7 @@ a {
 }
 
 .left-slide-button:hover {
-    color: #31748f;
+    color: #fffaf3;
 }
 
 .left-slide-in-button {
@@ -70,7 +70,7 @@ a {
     top: 30;
     width: 15%;
     height:100%;
-    background-color: #31748f;
+    background-color: #fffaf3;
     display: flex;
     flex-direction: column;
 }
@@ -94,8 +94,8 @@ a {
     height: 30px;
 }
 #new-note-button:hover {
-    color: #31748f;
-    background-color:white;
+    color: #191724;
+    background-color:#fffaf3;
 }
 
 .save-button {
@@ -104,9 +104,9 @@ a {
 }
 
 #save-delete {
-    background-color: #31748f;
+    background-color: #fffaf3;
     font-size: 16px;
-    color: white;
+    color: #191724;
 }
 
 footer {
@@ -133,7 +133,7 @@ footer {
 }
 
 textarea {
-    background-color: white;
+    background-color: #fffaf3;
     border: none;
     outline: none;
     resize: none;
@@ -147,7 +147,7 @@ textarea {
     justify-content: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 600px) {
     header {
         position: fixed;
         width: 100%;
@@ -173,7 +173,7 @@ textarea {
     }
 
     textarea {
-        background-color: white;
+        background-color: #191724;
         border: none;
         outline: none;
         resize: none;
